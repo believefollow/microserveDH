@@ -1,0 +1,186 @@
+
+application {
+  config {
+    baseName myapp,
+    applicationType gateway,
+    packageName com.myapp,
+    authenticationType jwt,
+    prodDatabaseType mysql,
+    clientFramework react
+  }
+  entities *
+}
+
+application {
+  config {
+    baseName booking,
+    applicationType microservice,
+    packageName com.myapp,
+    authenticationType jwt,
+    prodDatabaseType mysql,
+  }
+  entities Booking, Customer, Payed
+}
+
+application {
+  config {
+    baseName hotel,
+    applicationType microservice,
+    packageName com.myapp,
+    authenticationType jwt,
+    prodDatabaseType mysql,
+  }
+  entities Customer, Vip, Room, Bill, SubBill, Payed, Receipt
+}
+
+application {
+  config {
+    baseName shop,
+    applicationType microservice,
+    packageName com.myapp,
+    authenticationType jwt,
+    prodDatabaseType mysql,
+  }
+  entities Storage, Bill, SubBill, Payed, Receipt
+}
+
+application {
+  config {
+    baseName readId,
+    applicationType microservice,
+    packageName com.myapp,
+    authenticationType jwt,
+    prodDatabaseType mysql,
+  }
+  entities Customer
+}
+
+application {
+  config {
+    baseName issuers,
+    applicationType microservice,
+    packageName com.myapp,
+    authenticationType jwt,
+    prodDatabaseType mysql,
+  }
+  entities Card, Room
+}
+
+application {
+  config {
+    baseName print,
+    applicationType microservice,
+    packageName com.myapp,
+    authenticationType jwt,
+    prodDatabaseType mysql,
+  }
+  entities PrintInfo, Bill, SubBill, Payed, Receipt
+}
+
+entity Customer {
+	name String,
+    sex Sex,
+    age Integer,
+    id String,
+    address String
+}
+
+enum Sex {
+	Male,
+    Female
+}
+
+entity Vip {
+	phone String,
+    actived Boolean,
+    signInTime LocalDate,
+    
+}
+
+entity Room {
+	roomNumber Integer,
+    roomType RoomType
+}
+
+enum RoomType {
+	Single,
+    Double,
+    Triple
+}
+
+entity RoomPrice {
+	price BigDecimal
+}
+
+entity Bill {
+	id UUID,
+    balance BigDecimal,
+    finished Boolean,
+}
+
+entity Receipt {
+	number String,
+    receipted Boolean
+}
+
+entity Payed {
+	source Source,
+    payId String,
+    amount BigDecimal
+}
+
+entity Storage {
+	id Integer,
+    price BigDecimal,
+    remain Integer
+}
+
+entity SubBill {
+	id UUID,
+    number Integer,
+    total BigDecimal
+}
+
+entity Card {
+	key String
+}
+
+entity PrintInfo {
+	baseInfo String
+}
+
+enum Source {
+	AliPay,
+    WeChat,
+    Cash
+}
+
+entity Booking {
+	id UUID,
+	arrivedTime LocalDate,
+    leavingtime LocalDate,
+    bookingTime LocalDate
+}
+relationship OneToOne {
+	Vip{Customer} to Customer,
+    PrintInfo{Bill} to Bill,
+    PrintInfo{Payed} to Payed,
+    Bill{Receipt} to Receipt,
+    RoomPrice{RoomType} to RoomType
+}
+
+relationship ManyToOne {
+	Room{Customer} to Customer,
+	Room{Bill} to Bill,
+    Bill{SubBill} to SubBill,
+    Bill{Payed} to Payed,
+    SubBill{good} to Storage,
+    SubBill{good} to RoomPrice,
+    Card{Room} to Room,
+    Booking{Customer} to Customer,
+    Booking{Payed} to Payed
+}
+
+
+
+    
