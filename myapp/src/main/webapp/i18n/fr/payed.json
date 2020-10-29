@@ -1,0 +1,24 @@
+{
+  "myappApp": {
+    "payed": {
+      "home": {
+        "title": "Payeds",
+        "createLabel": "Créer un nouveau Payed",
+        "createOrEditLabel": "Créer ou éditer un Payed",
+        "notFound": "Aucun Payed trouvé"
+      },
+      "created": "Un nouveau Payed a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Payed avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Payed avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Payed {{ id }} ?"
+      },
+      "detail": {
+        "title": "Payed"
+      },
+      "source": "Source",
+      "payId": "Pay Id",
+      "amount": "Amount"
+    }
+  }
+}

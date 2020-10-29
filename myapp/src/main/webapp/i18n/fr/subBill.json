@@ -1,0 +1,24 @@
+{
+  "myappApp": {
+    "subBill": {
+      "home": {
+        "title": "SubBills",
+        "createLabel": "Créer un nouveau Sub Bill",
+        "createOrEditLabel": "Créer ou éditer un Sub Bill",
+        "notFound": "Aucun Sub Bill trouvé"
+      },
+      "created": "Un nouveau Sub Bill a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Sub Bill avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Sub Bill avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Sub Bill {{ id }} ?"
+      },
+      "detail": {
+        "title": "Sub Bill"
+      },
+      "number": "Number",
+      "total": "Total",
+      "good": "Good"
+    }
+  }
+}

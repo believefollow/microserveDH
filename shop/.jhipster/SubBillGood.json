@@ -1,0 +1,33 @@
+{
+  "name": "SubBillGood",
+  "fields": [
+    {
+      "fieldName": "number",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "total",
+      "fieldType": "BigDecimal"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "storage",
+      "otherEntityRelationshipName": "subBillGood",
+      "relationshipName": "good",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20201029084452",
+  "entityTableName": "sub_bill_good",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["myapp", "shop", "print"]
+}

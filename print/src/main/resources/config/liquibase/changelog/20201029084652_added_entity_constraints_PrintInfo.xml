@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+    <!--
+        Added the constraints for entity PrintInfo.
+    -->
+    <changeSet id="20201029084652-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="bill_id"
+                                 baseTableName="print_info"
+                                 constraintName="fk_print_info_bill_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="bill"/>
+
+        <addForeignKeyConstraint baseColumnNames="payed_id"
+                                 baseTableName="print_info"
+                                 constraintName="fk_print_info_payed_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="payed"/>
+
+    </changeSet>
+</databaseChangeLog>

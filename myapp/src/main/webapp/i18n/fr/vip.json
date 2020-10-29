@@ -1,0 +1,25 @@
+{
+  "myappApp": {
+    "vip": {
+      "home": {
+        "title": "Vips",
+        "createLabel": "Créer un nouveau Vip",
+        "createOrEditLabel": "Créer ou éditer un Vip",
+        "notFound": "Aucun Vip trouvé"
+      },
+      "created": "Un nouveau Vip a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Vip avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Vip avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Vip {{ id }} ?"
+      },
+      "detail": {
+        "title": "Vip"
+      },
+      "phone": "Phone",
+      "actived": "Actived",
+      "signInTime": "Sign In Time",
+      "customer": "Customer"
+    }
+  }
+}

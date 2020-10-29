@@ -1,0 +1,48 @@
+{
+  "name": "Room",
+  "fields": [
+    {
+      "fieldName": "roomNumber",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "memo",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "roomType",
+      "otherEntityRelationshipName": "room",
+      "relationshipName": "roomType",
+      "otherEntityField": "id",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "customer",
+      "otherEntityRelationshipName": "room",
+      "relationshipName": "customer",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "bill",
+      "otherEntityRelationshipName": "room",
+      "relationshipName": "bill",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20201029083752",
+  "entityTableName": "room",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["myapp", "hotel"]
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+    <!--
+        Added the constraints for entity Bill.
+    -->
+    <changeSet id="20201029083952-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="receipt_id"
+                                 baseTableName="bill"
+                                 constraintName="fk_bill_receipt_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="receipt"/>
+
+        <addForeignKeyConstraint baseColumnNames="sub_bill_id"
+                                 baseTableName="bill"
+                                 constraintName="fk_bill_sub_bill_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="sub_bill"/>
+
+        <addForeignKeyConstraint baseColumnNames="payed_id"
+                                 baseTableName="bill"
+                                 constraintName="fk_bill_payed_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="payed"/>
+
+    </changeSet>
+</databaseChangeLog>

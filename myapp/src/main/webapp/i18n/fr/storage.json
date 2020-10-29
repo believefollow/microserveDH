@@ -1,0 +1,23 @@
+{
+  "myappApp": {
+    "storage": {
+      "home": {
+        "title": "Storages",
+        "createLabel": "Créer un nouveau Storage",
+        "createOrEditLabel": "Créer ou éditer un Storage",
+        "notFound": "Aucun Storage trouvé"
+      },
+      "created": "Un nouveau Storage a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Storage avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Storage avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Storage {{ id }} ?"
+      },
+      "detail": {
+        "title": "Storage"
+      },
+      "price": "Price",
+      "remain": "Remain"
+    }
+  }
+}

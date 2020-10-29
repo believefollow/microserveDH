@@ -1,0 +1,10 @@
+{
+  "myappApp": {
+    "Source": {
+      "null": "",
+      "AliPay": "AliPay",
+      "WeChat": "WeChat",
+      "Cash": "Cash"
+    }
+  }
+}

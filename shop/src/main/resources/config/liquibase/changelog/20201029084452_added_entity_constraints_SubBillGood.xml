@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+    <!--
+        Added the constraints for entity SubBillGood.
+    -->
+    <changeSet id="20201029084452-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="good_id"
+                                 baseTableName="sub_bill_good"
+                                 constraintName="fk_sub_bill_good_good_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="storage"/>
+
+    </changeSet>
+</databaseChangeLog>
