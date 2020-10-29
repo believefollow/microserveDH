@@ -1,0 +1,24 @@
+{
+  "myappApp": {
+    "printInfo": {
+      "home": {
+        "title": "PrintInfos",
+        "createLabel": "Créer un nouveau Print Info",
+        "createOrEditLabel": "Créer ou éditer un Print Info",
+        "notFound": "Aucun Print Info trouvé"
+      },
+      "created": "Un nouveau Print Info a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Print Info avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Print Info avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Print Info {{ id }} ?"
+      },
+      "detail": {
+        "title": "Print Info"
+      },
+      "baseInfo": "Base Info",
+      "bill": "Bill",
+      "payed": "Payed"
+    }
+  }
+}

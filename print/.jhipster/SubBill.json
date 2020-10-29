@@ -1,0 +1,33 @@
+{
+  "name": "SubBill",
+  "fields": [
+    {
+      "fieldName": "number",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "total",
+      "fieldType": "BigDecimal"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "roomType",
+      "otherEntityRelationshipName": "subBill",
+      "relationshipName": "good",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20201029084352",
+  "entityTableName": "sub_bill",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["myapp", "hotel", "print"]
+}

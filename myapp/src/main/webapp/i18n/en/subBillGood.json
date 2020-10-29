@@ -1,0 +1,24 @@
+{
+  "myappApp": {
+    "subBillGood": {
+      "home": {
+        "title": "Sub Bill Goods",
+        "createLabel": "Create a new Sub Bill Good",
+        "createOrEditLabel": "Create or edit a Sub Bill Good",
+        "notFound": "No Sub Bill Goods found"
+      },
+      "created": "A new Sub Bill Good is created with identifier {{ param }}",
+      "updated": "A Sub Bill Good is updated with identifier {{ param }}",
+      "deleted": "A Sub Bill Good is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Sub Bill Good {{ id }}?"
+      },
+      "detail": {
+        "title": "Sub Bill Good"
+      },
+      "number": "Number",
+      "total": "Total",
+      "good": "Good"
+    }
+  }
+}

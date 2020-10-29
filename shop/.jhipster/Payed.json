@@ -1,0 +1,30 @@
+{
+  "name": "Payed",
+  "fields": [
+    {
+      "fieldName": "source",
+      "fieldType": "Source",
+      "fieldValues": "AliPay,WeChat,Cash"
+    },
+    {
+      "fieldName": "payId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "amount",
+      "fieldType": "BigDecimal"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20201029084152",
+  "entityTableName": "payed",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["myapp", "booking", "hotel", "shop", "print"]
+}

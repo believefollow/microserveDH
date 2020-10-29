@@ -1,0 +1,38 @@
+{
+  "name": "PrintInfo",
+  "fields": [
+    {
+      "fieldName": "baseInfo",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "bill",
+      "otherEntityRelationshipName": "printInfo",
+      "relationshipName": "bill",
+      "otherEntityField": "id",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "payed",
+      "otherEntityRelationshipName": "printInfo",
+      "relationshipName": "payed",
+      "otherEntityField": "id",
+      "ownerSide": true
+    }
+  ],
+  "changelogDate": "20201029084652",
+  "entityTableName": "print_info",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["myapp", "print"]
+}

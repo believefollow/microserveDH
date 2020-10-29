@@ -1,0 +1,24 @@
+{
+  "myappApp": {
+    "printInfo": {
+      "home": {
+        "title": "Print Infos",
+        "createLabel": "Create a new Print Info",
+        "createOrEditLabel": "Create or edit a Print Info",
+        "notFound": "No Print Infos found"
+      },
+      "created": "A new Print Info is created with identifier {{ param }}",
+      "updated": "A Print Info is updated with identifier {{ param }}",
+      "deleted": "A Print Info is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Print Info {{ id }}?"
+      },
+      "detail": {
+        "title": "Print Info"
+      },
+      "baseInfo": "Base Info",
+      "bill": "Bill",
+      "payed": "Payed"
+    }
+  }
+}

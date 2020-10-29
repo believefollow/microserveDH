@@ -1,0 +1,25 @@
+{
+  "name": "Storage",
+  "fields": [
+    {
+      "fieldName": "price",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "remain",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20201029084252",
+  "entityTableName": "storage",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["myapp", "hotel", "shop", "print"]
+}

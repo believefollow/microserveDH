@@ -1,0 +1,44 @@
+{
+  "name": "Booking",
+  "fields": [
+    {
+      "fieldName": "arrivedTime",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "leavingtime",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "bookingTime",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "customer",
+      "otherEntityRelationshipName": "booking",
+      "relationshipName": "customer",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "payed",
+      "otherEntityRelationshipName": "booking",
+      "relationshipName": "payed",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20201029084752",
+  "entityTableName": "booking",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["myapp", "booking"]
+}

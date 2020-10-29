@@ -1,0 +1,48 @@
+{
+  "name": "Bill",
+  "fields": [
+    {
+      "fieldName": "balance",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "finished",
+      "fieldType": "Boolean"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "receipt",
+      "otherEntityRelationshipName": "bill",
+      "relationshipName": "receipt",
+      "otherEntityField": "id",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "subBill",
+      "otherEntityRelationshipName": "bill",
+      "relationshipName": "subBill",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "payed",
+      "otherEntityRelationshipName": "bill",
+      "relationshipName": "payed",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20201029083952",
+  "entityTableName": "bill",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["myapp", "hotel", "print"]
+}

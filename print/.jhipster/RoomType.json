@@ -1,0 +1,29 @@
+{
+  "name": "RoomType",
+  "fields": [
+    {
+      "fieldName": "number",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "feature",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "price",
+      "fieldType": "BigDecimal"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20201029083852",
+  "entityTableName": "room_type",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["myapp", "hotel", "print"]
+}
