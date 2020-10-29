@@ -1,0 +1,94 @@
+entity Customer {
+	name String
+    idCard String
+    sex Sex
+    address String
+    nation String
+    age Integer
+    img ImageBlob
+}
+
+enum Sex {
+	Male, Female
+}
+
+entity Vip {
+    phone String
+    actived Boolean
+    signInDate LocalDate
+}
+
+entity Bill {
+	id String
+    balance BigDecimal
+    isPayed Boolean
+    source Source
+}
+enum Source {
+	AliPay
+    WeChat
+}
+
+entity CheckIn {
+	id String
+    startTime LocalDate
+    endTime LocalDate
+    bookTime LocalDate
+    status CheckInStatus
+}
+enum CheckInStatus {
+	Waiting,
+    Leaved,
+    Finished,
+    Scheduled
+}
+
+entity Room {
+	roomNumber Integer
+    roomType RoomType
+    priceType PriceType
+}
+
+enum RoomType {
+	Single, Double, Trible
+}
+
+enum PriceType {
+	Normal,
+    Vip,
+    Channel
+}
+
+// an ignored comment
+/** not an ignored comment */
+/**
+ * Task entity.
+ * @author The JHipster team.
+ */
+
+// defining multiple OneToMany relationships with comments
+
+
+relationship ManyToOne {
+	Customer to CheckIn{customer},
+    Bill to CheckIn{bill},
+    Room to CheckIn{room},
+}
+
+// defining multiple oneToOne relationships
+relationship OneToOne {
+	Vip{customer} to Customer,
+}
+
+// Set pagination options
+paginate Room with infinite-scroll
+paginate CheckIn, Bill, Vip, Customer with pagination
+
+// Use Data Transfert Objects (DTO)
+// dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl except Bill, Room, Customer
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
