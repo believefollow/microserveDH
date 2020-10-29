@@ -50,6 +50,14 @@ public class CacheConfiguration {
             createCache(cm, com.kyuan.myapp.domain.User.class.getName());
             createCache(cm, com.kyuan.myapp.domain.Authority.class.getName());
             createCache(cm, com.kyuan.myapp.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.kyuan.myapp.domain.Customer.class.getName());
+            createCache(cm, com.kyuan.myapp.domain.Vip.class.getName());
+            createCache(cm, com.kyuan.myapp.domain.Bill.class.getName());
+            createCache(cm, com.kyuan.myapp.domain.CheckIn.class.getName());
+            createCache(cm, com.kyuan.myapp.domain.CheckIn.class.getName() + ".customers");
+            createCache(cm, com.kyuan.myapp.domain.CheckIn.class.getName() + ".bills");
+            createCache(cm, com.kyuan.myapp.domain.CheckIn.class.getName() + ".rooms");
+            createCache(cm, com.kyuan.myapp.domain.Room.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

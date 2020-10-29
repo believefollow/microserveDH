@@ -1,0 +1,53 @@
+{
+  "name": "Customer",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "idCard",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "sex",
+      "fieldType": "Sex",
+      "fieldValues": "Male,Female"
+    },
+    {
+      "fieldName": "address",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nation",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "age",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "img",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "image"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "checkIn",
+      "otherEntityRelationshipName": "customer"
+    }
+  ],
+  "changelogDate": "20201029075418",
+  "entityTableName": "customer",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}
