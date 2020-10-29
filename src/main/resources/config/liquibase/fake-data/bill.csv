@@ -1,0 +1,11 @@
+id;balance;is_payed;source
+1;3959;true;AliPay
+2;67952;true;AliPay
+3;19497;false;AliPay
+4;8057;false;AliPay
+5;64690;true;AliPay
+6;90960;false;AliPay
+7;33074;true;WeChat
+8;27358;true;WeChat
+9;41106;true;WeChat
+10;72407;false;WeChat

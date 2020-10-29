@@ -1,0 +1,53 @@
+{
+  "name": "CheckIn",
+  "fields": [
+    {
+      "fieldName": "startTime",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "endTime",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "bookTime",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "CheckInStatus",
+      "fieldValues": "Waiting,Leaved,Finished,Scheduled"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "customer",
+      "otherEntityRelationshipName": "checkIn",
+      "relationshipName": "customer"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "bill",
+      "otherEntityRelationshipName": "checkIn",
+      "relationshipName": "bill"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "room",
+      "otherEntityRelationshipName": "checkIn",
+      "relationshipName": "room"
+    }
+  ],
+  "changelogDate": "20201029075718",
+  "entityTableName": "check_in",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}
